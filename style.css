@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#game-screen {
+  background-color: black;
+  width: 600px;
+  height: 800px;
+  overflow: hidden; /* this will allow all game elements to stay inside the game screen */
+}
+
+#ball {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  /* below will set position relative to the game screen and allow us to specifically locate elements inside our game box using top and left */
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+#paddle {
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  position: relative;
+  top: 700px;
+  left: 200px;
+}
